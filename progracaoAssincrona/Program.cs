@@ -8,6 +8,7 @@ namespace progracaoAssincrona
 {
     class Program
     {
+
         static async Task Main(string[] args)
         {
             Console.WriteLine("Tecle algo para iniciar...\n");
