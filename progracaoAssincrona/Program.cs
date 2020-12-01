@@ -16,7 +16,7 @@ namespace progracaoAssincrona
 
             // signifca que essa tarefa deve ser concluida pra continuar o processamento da metodod principal,
             // ou seja pra continuar a execução dos comando depois do metodo "aguardar"
-           await  aguardar(5);
+          await   aguardar(10);
 
             NewMethod();
         }
@@ -24,15 +24,15 @@ namespace progracaoAssincrona
         private static void NewMethod()
         {
             Console.WriteLine("Ja passou 5 segunsos ...\n");
-            Console.WriteLine("fim edi ");
+            Console.WriteLine("fim edi tread principal ");
             Console.ReadLine();
         }
 
         private static async Task aguardar(int tempo)
         {
-            Console.WriteLine("Iniciando a espera...");
+            Console.WriteLine("o Iniciando a espera...");
             await Task.Delay(TimeSpan.FromSeconds(tempo));
-            Console.WriteLine("Fim da espera");
+            Console.WriteLine("Fim da espera ednaldo");
         }
     }
 }
